@@ -1,0 +1,130 @@
+* {
+	--win9x-black: #000000;
+	--win9x-darkgray: #808080;
+	--win9x-gray: #a0a0a4;
+	--win9x-lightgray: #c0c0c0;
+	--win9x-offwhite: #fffbf0;
+	--win9x-white: #ffffff;
+
+	--win9x-darkblue: #000080;
+
+	--win9x-vivid-cerulean: #02A5FF;
+	--win9x-electric-orange: #FF3300;
+	--win9x-ryb-green: #66CC33;
+	--win9x-tangerine-yellow: #FFCC00;
+
+	--font-primary: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-display: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+}
+
+body {
+	font-size: 10pt;
+}
+
+.theme-light {
+    --header-primary: var(--win9x-black);
+    --header-secondary: var(--win9x-black);
+    --text-normal: var(--win9x-black);
+    --text-muted: var(--win9x-black);
+    --text-link: #0067e0;
+    --text-positive: var(--win9x-ryb-green);
+    --interactive-normal: var(--win9x-black);
+    --interactive-hover: var(--win9x-black);
+    --interactive-active: var(--win9x-black);
+    --interactive-muted: var(--win9x-lightgray);
+    --background-primary: var(--win9x-gray);
+    --background-secondary: var(--win9x-lightgray);
+    --background-secondary-alt: var(--win9x-gray);
+    --background-tertiary: var(--win9x-gray);
+    --background-accent: var(--win9x-gray);
+    --background-floating: var(--win9x-white);
+    --background-mobile-primary: #f8f9f9;
+    --background-mobile-secondary: var(--win9x-white);
+    --background-modifier-hover: rgba(116,127,141,0.08);
+    --background-modifier-active: rgba(116,127,141,0.16);
+    --background-modifier-selected: var(--win9x-darkblue);
+    --background-modifier-accent: rgba(6,6,7,0.08);
+    --info-positive-text: var(--win9x-black);
+    --info-warning-text: var(--win9x-black);
+    --info-danger-text: var(--win9x-black);
+    --info-help-background: rgba(0,103,224,0.1);
+    --info-help-foreground: #0067e0;
+    --info-help-text: var(--win9x-black);
+    --status-warning-text: #fff;
+    --scrollbar-thin-thumb: rgba(79,84,92,0.3);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #ccc;
+    --scrollbar-auto-track: #f2f2f2;
+    --scrollbar-auto-scrollbar-color-thumb: #e3e5e8;
+    --scrollbar-auto-scrollbar-color-track: #f2f3f5;
+    --elevation-stroke: 0 0 0 1px rgba(6,6,7,0.08);
+    --elevation-low: 0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.08);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.16);
+    --logo-primary: #7289da;
+    --control-brand-foreground: #7289da;
+    --background-mentioned: rgba(250,166,26,0.1);
+    --background-mentioned-hover: rgba(250,166,26,0.2);
+    --background-message-hover: rgba(6,6,7,0.02);
+    --channels-default: var(--win9x-darkgray);
+    --guild-header-text-shadow: 0 1px 1px hsla(0,0%,100%,0.4);
+    --channeltextarea-background: #ebedef;
+    --activity-card-background: #fff;
+    --textbox-markdown-syntax: #6a7480;
+    --deprecated-card-bg: #f8f9f9;
+    --deprecated-card-editable-bg: rgba(246,246,247,0.6);
+    --deprecated-store-bg: #f8f9f9;
+    --deprecated-quickswitcher-input-background: #fff;
+    --deprecated-quickswitcher-input-placeholder: rgba(79,84,92,0.3);
+    --deprecated-text-input-bg: rgba(79,84,92,0.02);
+    --deprecated-text-input-border: rgba(79,84,92,0.3);
+    --deprecated-text-input-border-hover: #b9bbbe;
+    --deprecated-text-input-border-disabled: #dcddde;
+    --deprecated-text-input-prefix: #b9bbbe;
+}
+.theme-dark, .theme-light {
+    --text-warning: var(--win9x-tangerine-yellow);
+    --text-danger: var(--win9x-electric-orange);
+    --info-positive-background: rgba(59,165,92,0.1);
+    --info-positive-foreground: var(--text-positive);
+    --info-warning-background: rgba(250,166,26,0.1);
+    --info-warning-foreground: var(--text-warning);
+    --info-danger-background: rgba(237,66,69,0.1);
+    --info-danger-foreground: var(--text-danger);
+    --status-positive-background: var(--text-positive);
+    --status-positive-text: #fff;
+    --status-warning-background: var(--text-warning);
+    --status-danger-background: var(--text-danger);
+    --status-danger-text: #fff;
+    --focus-primary: #00b0f4;
+}
+
+/* White box */
+div.messagesWrapper-1sRNjr,
+div#channels,
+div.scrollableContainer-2NUZem.webkit-HjD9Er {
+    background: #fff;
+    box-shadow: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
+    padding: 6px;
+    border-radius: 0;
+}
+
+div.messagesWrapper-1sRNjr {
+	margin: 2px 2px 11px 2px;
+}
+
+button {
+	box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+	border-radius: 0;
+	margin: 0 2px !important;
+}
+
+div.modeSelected-346R90 svg.icon-1DeIlz,
+div.modeSelected-346R90 div.channelName-2YrOjO {
+	color: var(--win9x-white);
+}
+
+div.container-1taM1r {
+	background-color: var(--win9x-gray);
+}
