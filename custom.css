@@ -20,9 +20,13 @@
     --win9x-border-inset: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
     --win9x-border-outset: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;;
 
-	--font-primary: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    --font-display: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+	--font-primary: "Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-display: "Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --font-code: "Courier New","Courier Prime",Courier,monospace;
+}
+
+code {
+    font-family: var(--font-code);
 }
 
 .theme-light {
