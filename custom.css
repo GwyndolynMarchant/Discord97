@@ -18,10 +18,6 @@
     --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
 }
 
-body {
-	font-size: 10pt;
-}
-
 .theme-light {
     --header-primary: var(--win9x-black);
     --header-secondary: var(--win9x-black);
@@ -103,12 +99,44 @@ body {
 /* White box */
 div.messagesWrapper-1sRNjr,
 div#channels,
-div.scrollableContainer-2NUZem.webkit-HjD9Er {
+div.textArea-12jD-V {
     background: #fff;
     box-shadow: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
     padding: 6px;
     border-radius: 0;
 }
+
+/*** ↓ MESSAGE BOX ↓ ***/
+div.scrollableContainer-2NUZem.webkit-HjD9Er {
+    background: none;
+    padding: 0;
+}
+
+div.textArea-12jD-V {
+    margin: -1px 4px;
+}
+
+div.textArea-12jD-V > div {
+    margin: -4px 0 0 6px;
+}
+
+div.textArea-12jD-V > div.placeholder-37qJjk {
+    color: var(--win9x-lightgray);
+}
+
+div.inner-MADQqc {
+    padding: 0 6px 0 0;
+    overflow: hidden;
+}
+
+div.inner-MADQqc button {
+    min-width: 44px;
+}
+
+div.channelTextArea-rNsIhG {
+    margin: 4px 0px 9px 0px;
+}
+/*** ↑ MESSAGE BOX ↑ ***/
 
 div.messagesWrapper-1sRNjr {
 	margin: 2px 2px 11px 2px;
@@ -127,4 +155,18 @@ div.modeSelected-346R90 div.channelName-2YrOjO {
 
 div.container-1taM1r {
 	background-color: var(--win9x-gray);
+}
+
+/* Manually overriding green colours */
+.button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp {
+    background-color: var(--win9x-ryb-green);
+}
+
+div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ {
+    color: var(--win9x-ryb-green);
+}
+
+div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ.selected-1JjBPm {
+    color: var(--win9x-white);
+    background-color: var(--win9x-ryb-green);
 }
