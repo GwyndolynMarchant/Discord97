@@ -13,6 +13,8 @@
 	--win9x-ryb-green: #66CC33;
 	--win9x-tangerine-yellow: #FFCC00;
 
+    --win9x-office-comment: #fdffcd;
+
 	--font-primary: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
     --font-display: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
     --font-code: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
@@ -186,4 +188,28 @@ div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ {
 div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ.selected-1JjBPm {
     color: var(--win9x-white);
     background-color: var(--win9x-ryb-green);
+}
+
+/** TOOLTIPS **/
+
+.theme-light div.tooltip-2QfLtc {
+    background-color: var(--win9x-office-comment);
+    border: 1px solid black;
+}
+
+div.tooltipPointer-3ZfirK {
+    border-top-color: var(--win9x-office-comment) !important;
+}
+
+div.tooltipPointer-3ZfirK:after {
+  content: " ";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: -4px;
+  top: -8px;
+  transform: rotate(45deg);
+  border: 0px solid black;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
 }
