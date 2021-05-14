@@ -1,4 +1,4 @@
-![Screenshot of Discord97 Theme](https://shadenexus.com/img/discord97.png)
+![discord97](https://user-images.githubusercontent.com/59987656/118237602-773b3e80-b465-11eb-8736-e6b4f4f18b24.png)
 
 > Discord was first released in the year 1997 for Microsoft Windows 95 PCs. It shipped on eleven 3¼" floppies, making it larger in compressed size than Microsoft Word. It was the first real-time chat application to support full interlaced video streaming at 320x240 and 15fps, and 16-bit graphics.
 
