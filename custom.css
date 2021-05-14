@@ -98,6 +98,7 @@
 
 /* White box */
 div.messagesWrapper-1sRNjr,
+div#private-channels,
 div#channels,
 div.textArea-12jD-V {
     background: #fff;
@@ -142,18 +143,21 @@ div.messagesWrapper-1sRNjr {
 	margin: 2px 2px 11px 2px;
 }
 
-button {
+button, .searchBar-6Kv8R2 button.searchBarComponent-32dTOx {
 	box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
 	border-radius: 0;
 	margin: 0 2px !important;
+    text-align: center;
 }
 
+a.selected-aXhQR6.container-2Pjhx-,
 div.modeSelected-346R90 svg.icon-1DeIlz,
 div.modeSelected-346R90 div.channelName-2YrOjO {
 	color: var(--win9x-white);
 }
 
-div.container-1taM1r {
+div.container-1taM1r,
+div.searchBar-6Kv8R2 {
 	background-color: var(--win9x-gray);
 }
 
