@@ -195,6 +195,7 @@ div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ.selected-1JjBPm {
 .theme-light div.tooltip-2QfLtc {
     background-color: var(--win9x-office-comment);
     border: 1px solid black;
+    box-shadow: none;
 }
 
 div.tooltipPointer-3ZfirK {
