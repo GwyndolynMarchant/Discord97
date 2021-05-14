@@ -8,7 +8,7 @@ A custom CSS theme for Discord that emulates the aesthetics of Windows 95.
 ## Requirements
 - [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord) or any other Discord CSS injector
 
-## Current Status: Gimmick
+## Current Status: Mostly Gimmick
 This is really mostly a gimmick and proof of concept I built over an evening where i was fooling around with a retro-themed linux environment. There's a lot that looks bad, doesn't line up, and glitches abound. But it's cute, and that's what matters. 🙂
 
 ## Influences
