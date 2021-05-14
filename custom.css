@@ -6,7 +6,9 @@
 	--win9x-offwhite: #fffbf0;
 	--win9x-white: #ffffff;
 
+    --win9x-blue: #0000ff;
 	--win9x-darkblue: #000080;
+    --win9x-teal: #007b7b;
 
 	--win9x-vivid-cerulean: #02A5FF;
 	--win9x-electric-orange: #FF3300;
@@ -14,6 +16,9 @@
 	--win9x-tangerine-yellow: #FFCC00;
 
     --win9x-office-comment: #fdffcd;
+
+    --win9x-border-inset: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
+    --win9x-border-outset: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;;
 
 	--font-primary: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
     --font-display: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -104,7 +109,7 @@ div#private-channels,
 div#channels,
 div.textArea-12jD-V {
     background: #fff;
-    box-shadow: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
+    box-shadow: var(--win9x-border-inset);
     padding: 2px;
     border-radius: 0;
 }
@@ -159,7 +164,7 @@ div.messagesWrapper-1sRNjr {
 }
 
 button, .searchBar-6Kv8R2 button.searchBarComponent-32dTOx {
-	box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px grey,inset 2px 2px #dfdfdf;
+	box-shadow: var(--win9x-border-outset);
 	border-radius: 0;
 	margin: 0 2px !important;
     text-align: center;
@@ -171,8 +176,18 @@ div.modeSelected-346R90 div.channelName-2YrOjO {
 	color: var(--win9x-white);
 }
 
+div[aria-label="Members"] h2 {
+    color: var(--win9x-black);
+}
+
+div.content-yTz4x3:before {
+    display: none;
+}
+
 div.container-1taM1r,
-div.searchBar-6Kv8R2 {
+div.searchBar-6Kv8R2,
+div[aria-label="Members"],
+div[aria-label="Members"] > div {
 	background-color: var(--win9x-gray);
 }
 
@@ -213,4 +228,15 @@ div.tooltipPointer-3ZfirK:after {
   border: 0px solid black;
   border-right-width: 1px;
   border-bottom-width: 1px;
+}
+
+nav[aria-label="Servers sidebar"] {
+    width: 80px;
+}
+
+nav[aria-label="Servers sidebar"] > ul > div:nth-child(2){
+    background-color: var(--win9x-teal);
+    margin: 6px 2px 6px 6px;
+    padding-left: 1px;
+    box-shadow: var(--win9x-border-inset);
 }
