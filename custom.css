@@ -103,8 +103,13 @@ div#channels,
 div.textArea-12jD-V {
     background: #fff;
     box-shadow: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
-    padding: 6px;
+    padding: 2px;
     border-radius: 0;
+}
+
+div#private-channels,
+div#channels {
+    margin-bottom: 0px;
 }
 
 /*** ↓ MESSAGE BOX ↓ ***/
@@ -113,12 +118,20 @@ div.scrollableContainer-2NUZem.webkit-HjD9Er {
     padding: 0;
 }
 
+div.buttons-3JBrkn,
+button.attachButton-2WznTc {
+    height: 36px;
+}
+
 div.textArea-12jD-V {
-    margin: -1px 4px;
+    margin: 0px 4px;
+    height: 37px;
+    min-height: 37px;
 }
 
 div.textArea-12jD-V > div {
-    margin: -4px 0 0 6px;
+    margin-left: 6px;
+    padding: 3px 2px 0px 2px;
 }
 
 div.textArea-12jD-V > div.placeholder-37qJjk {
