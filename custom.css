@@ -216,6 +216,50 @@ div.messagesWrapper-1sRNjr {
 	margin: 0 0 10px 3px;
 }
 
+span.username-1A8OIy {
+    color: var(--win9x-black);
+}
+
+span.username-1A8OIy {
+    text-decoration: underline;
+    font-weight: 700 !important;
+}
+
+span.username-1A8OIy:hover {
+    text-decoration-style: double !important;
+}
+
+.markup-2BOw-j a {
+    text-decoration: underline;
+}
+
+/*┌─────────────────────────────────────────────────────┐
+  │                  TYPING INDICATOR                   │
+  └─────────────────────────────────────────────────────┘*/
+
+div.typing-2GQL18.base-gE7OpD {
+    position: absolute;
+    background-color: var(--win9x-office-comment);
+    border: 1px solid black;
+    border-radius: 4px;
+    bottom: 58px;
+    overflow: visible;
+    right: 2em;
+}
+
+div.typing-2GQL18.base-gE7OpD:after {
+    content: '';
+    position: absolute;
+    right: -4px;
+    width: 6px;
+    height: 6px;
+    border: 0px solid black;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    transform: rotate(-45deg);
+    background-color: var(--win9x-office-comment);
+}
+
 /*┌─────────────────────────────────────────────────────┐
   │                       BUTTONS                       │
   └─────────────────────────────────────────────────────┘*/
@@ -225,6 +269,20 @@ button, .searchBar-6Kv8R2 button.searchBarComponent-32dTOx {
 	border-radius: 0;
 	margin: 0 2px !important;
     text-align: center;
+}
+
+/* Manually overriding green colours */
+.button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp {
+    background-color: var(--win9x-ryb-green);
+}
+
+div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ {
+    color: var(--win9x-ryb-green);
+}
+
+div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ.selected-1JjBPm {
+    color: var(--win9x-white);
+    background-color: var(--win9x-ryb-green);
 }
 
 /*┌─────────────────────────────────────────────────────┐
@@ -242,26 +300,26 @@ div[aria-label="Members"] > div {
 	background-color: var(--win9x-gray);
 }
 
-/* Manually overriding green colours */
-.button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp {
-    background-color: var(--win9x-ryb-green);
+div.name-uJV0GL > span {
+    font-weight: 600;
+    font-size: 11pt;
+    color: var(--win9x-black);
+    line-height: 1.8em;
+    padding-right: 2px;
 }
 
-div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ {
-    color: var(--win9x-ryb-green);
+div.name-uJV0GL > span[style^="color"] {
+    text-shadow: 1px 1px #00000090;
 }
 
-div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ.selected-1JjBPm {
-    color: var(--win9x-white);
-    background-color: var(--win9x-ryb-green);
-}
-
-/** TOOLTIPS **/
+/*┌─────────────────────────────────────────────────────┐
+  │                TOOLTIPS AND POPOUT                  │
+  └─────────────────────────────────────────────────────┘*/
 
 div[id^="popout"] div[role="dialog"],
 .theme-light div.tooltip-2QfLtc {
     background-color: var(--win9x-office-comment);
-    border: 1px solid black;
+    border: 1px solid var(--win9x-black);
     box-shadow: none;
 }
 
@@ -290,6 +348,10 @@ div.tooltipPointer-3ZfirK:after {
   border-bottom-width: 1px;
 }
 
+/*┌─────────────────────────────────────────────────────┐
+  │                  SERVERS SIDEBAR                    │
+  └─────────────────────────────────────────────────────┘*/
+
 nav[aria-label="Servers sidebar"] {
     width: 83px;
 }
@@ -303,60 +365,4 @@ nav[aria-label="Servers sidebar"] > ul > div:nth-child(2){
     border-left: var(--win9x-border-inset-top-left);
     border-right: var(--win9x-border-inset-bottom-right);
     border-bottom: var(--win9x-border-inset-bottom-right);
-}
-
-div.typing-2GQL18.base-gE7OpD {
-    position: absolute;
-    background-color: var(--win9x-office-comment);
-    border: 1px solid black;
-    border-radius: 4px;
-    bottom: 58px;
-    overflow: visible;
-    right: 2em;
-}
-
-div.typing-2GQL18.base-gE7OpD:after {
-    content: '';
-    position: absolute;
-    right: -4px;
-    width: 6px;
-    height: 6px;
-    border: 0px solid black;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    transform: rotate(-45deg);
-    background-color: var(--win9x-office-comment);
-}
-
-div.name-uJV0GL > span {
-    font-weight: 600;
-    font-size: 11pt;
-    color: var(--win9x-black);
-    line-height: 1.8em;
-    padding-right: 2px;
-}
-
-span.username-1A8OIy {
-    color: var(--win9x-black);
-}
-
-span.username-1A8OIy {
-    text-decoration: underline;
-    font-weight: 700 !important;
-}
-
-span.username-1A8OIy:hover {
-    text-decoration-style: double !important;
-}
-
-div.name-uJV0GL > span[style^="color"] {
-    text-shadow: 1px 1px #00000090;
-}
-
-.markup-2BOw-j a {
-    text-decoration: underline;
-}
-
-div[id^="popout"] {
-
 }
