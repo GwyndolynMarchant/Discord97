@@ -162,10 +162,16 @@ div#channels svg {
     height: 10pt;
 }
 
+div.modeSelected-346R90 svg.actionIcon-PgcMM2,
 a.selected-aXhQR6.container-2Pjhx-,
 div.modeSelected-346R90 svg.icon-1DeIlz,
+div.modeSelected-346R90:hover svg.icon-1DeIlz,
 div.modeSelected-346R90 div.channelName-2YrOjO {
     color: var(--win9x-white);
+}
+
+button.addButton-3bLyEA {
+    box-shadow: none;
 }
 
 /*┌─────────────────────────────────────────────────────┐
@@ -234,7 +240,10 @@ span.username-1A8OIy:hover {
 }
 
 .isUnread-3Ef-o9 { border-color: var(--win9x-electric-orange); }
-.isUnread-3Ef-o9 > span { background-color: var(--win9x-electric-orange); }
+div.messagesWrapper-1sRNjr .isUnread-3Ef-o9 > span {
+    background-color: var(--win9x-electric-orange);
+    color: white;
+}
 .isUnread-3Ef-o9 > span > svg > path {
     color: var(--win9x-electric-orange);
     fill: var(--win9x-electric-orange);
