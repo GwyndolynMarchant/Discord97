@@ -1,4 +1,4 @@
-![discord97](https://user-images.githubusercontent.com/59987656/118237602-773b3e80-b465-11eb-8736-e6b4f4f18b24.png)
+![discord97](https://user-images.githubusercontent.com/59987656/118606688-b5966d80-b785-11eb-9dfd-a404b9af775e.png)
 
 > Discord was first released in the year 1997 for Microsoft Windows 95 PCs. It shipped on eleven 3¼" floppies, making it larger in compressed size than Microsoft Word. It was the first real-time chat application to support full interlaced video streaming at 320x240 and 15fps, and 16-bit graphics.
 
@@ -8,7 +8,7 @@ A custom CSS theme for Discord that emulates the aesthetics of Windows 95.
 ## Requirements
 - [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord) or any other Discord CSS injector
 
-## Current Status: Mostly Gimmick
+## Current Status: Getting Usable
 This is really mostly a gimmick and proof of concept I built over an evening where i was fooling around with a retro-themed linux environment. There's a lot that looks bad, doesn't line up, and glitches abound. But it's cute, and that's what matters. 🙂
 
 ## Influences
