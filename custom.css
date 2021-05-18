@@ -292,6 +292,18 @@ div.circleIconButton-1QV--U.circleButtonBase-2DCxIZ.selected-1JjBPm {
     background-color: var(--win9x-ryb-green);
 }
 
+button.statusWithPopout-3ZfFol {
+    box-shadow: none;
+}
+
+button.statusWithPopout-3ZfFol > div.contents-18-Yxp {
+    text-shadow: 1px 1px black;
+}
+
+svg.ping-2NgC8E > path {
+    outline: 1px solid black;
+}
+
 /*┌─────────────────────────────────────────────────────┐
   │                    MEMBERS PANEL                    │
   └─────────────────────────────────────────────────────┘*/
@@ -372,4 +384,8 @@ nav[aria-label="Servers sidebar"] > ul > div:nth-child(2){
     border-left: var(--win9x-border-inset-top-left);
     border-right: var(--win9x-border-inset-bottom-right);
     border-bottom: var(--win9x-border-inset-bottom-right);
+}
+
+nav[aria-label="Servers sidebar"] div.iconBadge-3qSJIw {
+    background-color: var(--win9x-ryb-green);
 }
