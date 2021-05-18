@@ -174,6 +174,48 @@ button.addButton-3bLyEA {
     box-shadow: none;
 }
 
+div.containerDefault-3tr_sE div[aria-expanded="true"]:before,
+div.containerDefault--pIXnN + div.containerDefault-3tr_sE:before,
+div.containerDefault--pIXnN + div.containerDefault--pIXnN:before,
+div.containerDefault--pIXnN:last-of-type:after {
+    font-size: 18pt;
+    position: absolute;
+    color: var(--win9x-gray);
+}
+
+div.containerDefault--pIXnN + div.containerDefault-3tr_sE:before {
+    content: "└";
+    bottom: 1.35em;
+}
+
+div.containerDefault--pIXnN + div.containerDefault--pIXnN:before {
+    content: "├";
+    bottom: 1.5em;
+}
+
+div.containerDefault--pIXnN:last-of-type:after {
+    content: "└";
+    bottom: 0.35em;
+    left: 0;
+}
+
+div.containerDefault--pIXnN div > div.content-1x5b-n {
+    margin-left: 1.6em;
+    padding-left: 0em;
+}
+
+div.containerDefault-3tr_sE div[aria-expanded="true"] svg {
+    display: none;
+}
+
+div.containerDefault-3tr_sE div[aria-expanded="true"] {
+    padding-left: 0.4em;
+}
+
+div.containerDefault-3tr_sE div[aria-expanded="true"]:before {
+    content: "┬";
+}
+
 /*┌─────────────────────────────────────────────────────┐
   │                 MESSAGE INPUT AREA                  │
   └─────────────────────────────────────────────────────┘*/
