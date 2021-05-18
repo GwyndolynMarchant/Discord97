@@ -233,6 +233,13 @@ span.username-1A8OIy:hover {
     text-decoration: underline;
 }
 
+.isUnread-3Ef-o9 { border-color: var(--win9x-electric-orange); }
+.isUnread-3Ef-o9 > span { background-color: var(--win9x-electric-orange); }
+.isUnread-3Ef-o9 > span > svg > path {
+    color: var(--win9x-electric-orange);
+    fill: var(--win9x-electric-orange);
+}
+
 /*┌─────────────────────────────────────────────────────┐
   │                  TYPING INDICATOR                   │
   └─────────────────────────────────────────────────────┘*/
